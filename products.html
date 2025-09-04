@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroMart - Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f6f9;
+        }
+        
+        header {
+            background: #0077cc;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+        
+        .card h3 {
+            font-size: 18px;
+            color: #0077cc;
+            margin-bottom: 10px;
+        }
+        
+        .card p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .card button {
+            background: #0077cc;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        
+        .card button:hover {
+            background: #005fa3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>ElectroMart - Products</header>
+
+    <div class="container">
+        <h2>Explore Our Categories</h2>
+        <div class="grid">
+
+            <!-- Sensors -->
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png" alt="Sensors">
+                <h3>Sensors</h3>
+                <p>Temperature, motion, IR, ultrasonic and more.</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Resistors -->
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1144/1144776.png" alt="Resistors">
+                <h3>Resistors</h3>
+                <p>High precision, carbon film, and variable resistors.</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Capacitors -->
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/993/993928.png" alt="Capacitors">
+                <h3>Capacitors</h3>
+                <p>Electrolytic, ceramic, and supercapacitors.</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- More Products -->
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3103/3103446.png" alt="More">
+                <h3>More Products</h3>
+                <p>Transistors, diodes, ICs, microcontrollers, and more.</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
